@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "tasks": [
+    {
+      "id": "BE-01",
+      "title": "Add a runnable local PDF analysis API",
+      "priority": "P0",
+      "status": "In progress",
+      "assignees": [
+        "VibhuA-ai"
+      ],
+      "lane": "API & workflow",
+      "dependsOn": [],
+      "url": "https://github.com/phileokairos-pixel/claude-impact-lab-oc---team-1/issues/2",
+      "progressNote": "Local upload/job API implemented. Clinical analysis jobs and durable hosted service remain."
+    },
+    {
+      "id": "BE-02",
+      "title": "Implement OCR with stable page citations",
+      "priority": "P0",
+      "status": "In progress",
+      "assignees": [
+        "harjeev"
+      ],
+      "lane": "Document analysis",
+      "dependsOn": [
+        "BE-01"
+      ],
+      "url": "https://github.com/phileokairos-pixel/claude-impact-lab-oc---team-1/issues/3",
+      "progressNote": "Local rendering, OCR, original-page citations and text search implemented. Orientation/quality checks and structured extraction remain."
+    },
+    {
+      "id": "BE-03",
+      "title": "Return validated form fields and rule findings",
+      "priority": "P0",
+      "status": "Todo",
+      "assignees": [
+        "harjeev",
+        "VibhuA-ai"
+      ],
+      "lane": "Document analysis",
+      "dependsOn": [
+        "BE-02"
+      ],
+      "url": "https://github.com/phileokairos-pixel/claude-impact-lab-oc---team-1/issues/4"
+    },
+    {
+      "id": "BE-04",
+      "title": "Enforce human review and invalidate stale outcomes",
+      "priority": "P0",
+      "status": "In progress",
+      "assignees": [
+        "VibhuA-ai",
+        "harjeev"
+      ],
+      "lane": "API & workflow",
+      "dependsOn": [
+        "BE-03"
+      ],
+      "url": "https://github.com/phileokairos-pixel/claude-impact-lab-oc---team-1/issues/5",
+      "progressNote": "Local versioned review and stale-draft invalidation implemented. Full rule-dependent review, authentication and durable audit remain."
+    },
+    {
+      "id": "BE-05",
+      "title": "Make evaluation blind and reproducible",
+      "priority": "P0",
+      "status": "Todo",
+      "assignees": [
+        "harjeev"
+      ],
+      "lane": "Document analysis",
+      "dependsOn": [
+        "BE-03"
+      ],
+      "url": "https://github.com/phileokairos-pixel/claude-impact-lab-oc---team-1/issues/6"
+    },
+    {
+      "id": "BE-06",
+      "title": "Instrument timing and rehearse end to end",
+      "priority": "P1",
+      "status": "Todo",
+      "assignees": [
+        "VibhuA-ai"
+      ],
+      "lane": "API & workflow",
+      "dependsOn": [
+        "BE-01",
+        "BE-02",
+        "BE-03",
+        "BE-04"
+      ],
+      "url": "https://github.com/phileokairos-pixel/claude-impact-lab-oc---team-1/issues/7"
+    },
+    {
+      "id": "BE-07",
+      "title": "Separate packet-derived data from source",
+      "priority": "P0",
+      "status": "Todo",
+      "assignees": [
+        "harjeev",
+        "VibhuA-ai"
+      ],
+      "lane": "Team lead",
+      "dependsOn": [],
+      "url": "https://github.com/phileokairos-pixel/claude-impact-lab-oc---team-1/issues/8"
+    }
+  ]
+}
